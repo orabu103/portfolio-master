@@ -1,0 +1,11 @@
+.BasicButton{
+    width: 135px;
+    height: 46px;
+    background: transparent;
+    border-radius: 12px;
+    cursor: pointer;
+    border: 1px solid #2F80ED;
+    text-align: center;
+    
+}
+

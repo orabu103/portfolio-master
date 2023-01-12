@@ -3,10 +3,10 @@
   text-align: left;
   font-style: normal;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #F2F2F2;
@@ -44,4 +44,17 @@ p{
   font-size: 18px;
   line-height: 22px;
   color: #828282;
+}
+
+li{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #4F4F4F;
+}
+button{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
 }

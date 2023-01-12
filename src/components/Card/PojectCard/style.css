@@ -1,0 +1,38 @@
+.ProjectCard{
+    display: flex;
+}
+
+.ProjectCard_container{
+    margin: 0px 20px;
+}
+.ProjectCard_container h1,
+.ProjectCard_container ul,
+.ProjectCard_container p{
+    margin-bottom: 20px;
+}
+.ProjectCard_container_body_button{
+    display: flex;
+}
+.ProjectCard_container_body_button > *{
+   margin:20px 10px 0px 0px;
+}
+
+
+ul {
+    list-style-type: '#';
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+li{
+    margin-right: 25px;
+}
+.ProjectCard_container li:hover {
+    color: lightblue;
+}
+@media only screen and (max-width: 768px) {
+    /* CSS styles for screens with width less than 768px */
+    .ProjectCard{
+        flex-wrap: wrap;
+    }
+  }
