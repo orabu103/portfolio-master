@@ -16,8 +16,8 @@ const ProjectCard = () => {
         <div className='ProjectCard_container'>
         {/* Header */}
         <ul>
-            {skills.map(value => {
-                return <li>{value}</li>
+            {skills.map((value , index) => {
+                return <li key={index}>{value}</li>
             })}
         </ul>
         <h1>Mail To SMS</h1>

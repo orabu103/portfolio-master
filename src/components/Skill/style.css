@@ -1,0 +1,31 @@
+.Skill{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px 0px;
+}
+.Skill > p {
+ flex: 1;
+ margin-right: 10px;
+}
+
+.Skill_line_percent,
+.Skill_line {
+    height: 9px;
+    border-radius: 12px;
+}
+.Skill_line{
+    width: 348px;
+    background: #C4C4C4;
+    /* grid-column-start: 1;
+    grid-column-start: 3; */
+}
+.Skill_line_percent{
+    background: #2F80ED;
+}
+@media only screen and (max-width: 530px) {
+    /* CSS styles for screens with width less than 768px */
+    .Skill_line{
+        width: 222px;
+    }
+  }
