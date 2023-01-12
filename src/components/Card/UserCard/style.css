@@ -1,19 +1,29 @@
 .UserCard{
     display: flex;
+    justify-content: center;
+
 }
-.UserCard_container{
-   
-}
+
 .UserCard_container_header{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0px 20px 30px 20px;
+    margin: 10px 20px 15px 20px;
 }
 
 .UserCard_container_body{
     margin: 0px 20px;
 }
+.UserCard_container_UserCard_container_header_info{
+    margin-bottom: 10px;
+}
 p{
     margin-bottom: 20px;
 }
 
+@media only screen and (max-width: 768px) {
+    /* CSS styles for screens with width less than 768px */
+    .UserCard{
+        flex-wrap: wrap;
+    }
+  }

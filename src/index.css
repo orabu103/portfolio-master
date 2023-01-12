@@ -2,13 +2,14 @@
   margin: 0;
   text-align: left;
   font-style: normal;
+  box-sizing: border-box;
 }
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #333333;
+  background: #F2F2F2;
 }
 
 code {

@@ -4,7 +4,7 @@ import './style.css'
 const UserContact = ({icon , text}) => {
   return (
     <div className='UserContact'>
-        <span class="UserContact_icon material-symbols-outlined">
+        <span className="UserContact_icon material-symbols-outlined">
             {icon}
         </span>
         <span>
