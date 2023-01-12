@@ -1,0 +1,8 @@
+.UserContact{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.UserContact_icon{
+    margin-right: 10px;
+}
