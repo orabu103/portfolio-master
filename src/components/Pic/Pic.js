@@ -5,8 +5,8 @@ const Pic = ({url , width , height}) => {
     const background = { 
         width: width ? width :"351px",
         height: height ? height : "343px",
-        maxWidth: "351px",
-        maxHeight: "343px",
+        // maxWidth: "351px",
+        // maxHeight: "343px",
         borderRadius: "12px",
         background :`url(${url})` ,
         backgroundSize: "cover",

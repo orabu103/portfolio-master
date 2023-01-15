@@ -1,8 +1,11 @@
-/* .ProjectCard{
+.ProjectCard{
     display: flex;
-} */
-
+}
+.ProjectCard_pic{
+    width: 100%;
+}
 .ProjectCard_container{
+    
     margin: 0px 20px;
 }
 .ProjectCard_container h1,

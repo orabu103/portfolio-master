@@ -8,10 +8,11 @@ import './style.css'
 const url = "https://www.geckoboard.com/uploads/sales-dashboard-example.png"
 let skills = ['JavaScript' , 'Nodejs' , 'React' , 'C++' , 'C#' , 'Java' , ' Python']
 
-const ProjectCard = ({style}) => {
+const ProjectCard = ({flex}) => {
 
     let styles = {
-        display: style === 'vertical' ? null : 'flex'
+        flexDirection: flex === 'vertical' ? 'column' : 'row',
+        alignItems:  flex === 'vertical' ? 'center' : null
     }
 
   return (
@@ -19,7 +20,7 @@ const ProjectCard = ({style}) => {
         <div className='ProjectCard' style={styles}>
             {/* Picture */}
             <div className="ProjectCard_pic" >
-                <Pic url = {url}/>
+                <Pic url = {url} width="100%" />
             </div>
             <div className='ProjectCard_container'>
             {/* Header */}

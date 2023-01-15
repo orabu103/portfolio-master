@@ -7,9 +7,9 @@ const footivoly = "https://images.squarespace-cdn.com/content/v1/567091455a5668a
 const piano = "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/111a24a6658dc9c34383d0892ee63176105d324e877e013c3c9c5312cc433da4._RI_V_TTW_.jpg"
 const coocking = "https://t4.ftcdn.net/jpg/03/32/75/39/360_F_332753934_tBacXEgxnVplFBRyKbCif49jh0Wz89ns.jpg"
 
-const HobbieCard = ({style}) => {
+const HobbieCard = ({flex}) => {
   let styles = {
-    display: style === 'vertical' ? null : 'flex'
+    display: flex === 'vertical' ? null : 'flex'
 }
 
   return (

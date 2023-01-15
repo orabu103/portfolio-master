@@ -1,5 +1,4 @@
 import './App.css';
-import BasicCard from './components/Card/BasicCard';
 import UserCard from './components/Card/UserCard/UserCard';
 import ProjectCard from './components/Card/PojectCard/ProjectCard';
 import SkillsCard from './components/Card/SkillsCard/SkillsCard';
@@ -10,16 +9,23 @@ import Header from './components/Header/Header';
 
 function App() {
   return (
-    <div className="App">
-      {/* <Header title={'Projects'} number={3}/> */}
-      <UserCard className="grid-item item1" />
-      <ProjectCard className="grid-item item2" />
-      <SkillsCard className="grid-item item3" />
-      <BlogCard className="grid-item item4"/>
-      <ExperiencesCard className="grid-item item5"/>
-      <HobbieCard className="grid-item item6"/>
+    <div className="App grid-container">
+      <div className="grid-item item1"> <UserCard /> </div>
+     
+      <div className="grid-item item4"> <ExperiencesCard flex='vertical'/> </div>
+      <div className="grid-item item3"> <BlogCard flex='vertical'/> </div>
+      <div className="grid-item item5"> <HobbieCard flex='vertical'/> </div>
+      <div className="grid-item item2"> <SkillsCard flex='vertical'/> </div>
+      <div className="grid-item item6"> <Header title={'Project'} number={3} flex='vertical'/> </div>
+      
+      <div className="grid-item item7"> <ProjectCard flex='vertical'/> </div>
+      <div className="grid-item item8"> <ProjectCard flex='vertical'/> </div>
+      <div className="grid-item item9"> <ProjectCard flex='vertical'/> </div>
     </div>
   );
 }
 
 export default App;
+
+
+

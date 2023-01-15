@@ -1,6 +1,9 @@
 .UserCard_container {
     margin: 0px 20px;
 }
+.UserCard_pic{
+    width: 100%;
+}
 .UserCard_container_header{
     flex-wrap: wrap;
     justify-content: space-between;

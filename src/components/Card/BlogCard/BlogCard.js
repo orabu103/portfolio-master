@@ -1,10 +1,10 @@
-import React , { useEffect, useState }from 'react'
+
 import Pic from '../../Pic/Pic'
 import BasicCard from '../BasicCard'
 
 import './style.css'
 const url = "https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y29tcHV0ZXIlMjBjb2ZmZWV8ZW58MHx8MHx8&w=1000&q=80"
-const BlogCard = ({style}) => { 
+const BlogCard = ({flex}) => { 
   const body = () => {
     return(
       <div className='BlogCard_body'>
@@ -28,7 +28,7 @@ const BlogCard = ({style}) => {
               <div className='BlogCard_header_title'>
                   <h5>Blog</h5>
                   <h1>How to organize your CSS</h1>
-                  {style !== 'vertical' && body()}
+                  {flex !== 'vertical' && body()}
               </div>
           {/* Picture */}
               <div className='BlogCard_header_pic'>
@@ -36,9 +36,9 @@ const BlogCard = ({style}) => {
               </div>
           </div>
           {/* Body */}
-          {style === 'vertical' && body()}
+          {flex === 'vertical' && body()}
           {/* Footer */}
-          <a href="#">dev.to</a>
+          <a href="localhost:3000">dev.to</a>
       </div>
     </BasicCard>
   )

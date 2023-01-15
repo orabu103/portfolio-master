@@ -11,7 +11,7 @@
 .BlogCard_header{
     display: flex;
     justify-content: space-between;
-    width: 100vw;
+    width: 105%;
 }
 .BlogCard_header_title > h1{
     width: 178px;

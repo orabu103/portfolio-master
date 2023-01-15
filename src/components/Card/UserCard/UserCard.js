@@ -6,9 +6,9 @@ import BasicCard from '../BasicCard';
 import './style.css'
 const url = "https://media.npr.org/assets/img/2022/11/08/ap22312071681283-0d9c328f69a7c7f15320e8750d6ea447532dff66.jpg";
  
-const UserCard = ({style}) => {
+const UserCard = ({flex}) => {
     let styles = {
-        display: style === 'vertical' ? null : 'flex'
+        display: flex === 'vertical' ? null : 'flex'
     }
 
   return (
@@ -16,7 +16,8 @@ const UserCard = ({style}) => {
         <div className='UserCard' style={styles}>
             {/* Picture */}
             <div className="UserCard_pic" >
-                <Pic url = {url}/>
+                <Pic url = {url}
+                    width={'100%'}/>
             </div>
             {/* Header */}
             <div className='UserCard_container'>

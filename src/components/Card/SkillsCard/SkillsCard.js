@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useRef , useState , useEffect}from 'react'
 import Skill from '../../Skill/Skill'
 import BasicCard from '../BasicCard'
 
@@ -12,19 +12,36 @@ const skills = {
     Vue: 35
 }
 
-const SkillsCard = ({style}) => {
+const SkillsCard = ({flex}) => {
+  const elementRef = useRef(null);
+  const [isAnimating, setIsAnimating] =  useState(false);
+
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              console.log("Is apperd")
+                setIsAnimating(true);
+                observer.disconnect();
+            }
+        });
+    });
+    observer.observe(elementRef.current);
+}, []);
+
   let styles = {
-    gridTemplateColumns: style === 'vertical' ? '1fr' : 'repeat(2, 1fr)'
+    gridTemplateColumns: flex === 'vertical' ? '1fr' : 'repeat(2, 1fr)'
 }
   return (
     <BasicCard>
-      <div className='SkillsCard'>
+      <div  className='SkillsCard'>
           {/* Header */}
           <h1 className='SkillsCard_header'>FRONT END</h1>
           {/* Body */}
-          <div className='SkillsCard_body'  style={styles}>
+          <div  ref={elementRef} className='SkillsCard_body'  style={styles}>
           {Object.keys(skills).map((value , index) => {
-              return <Skill key={index} text={value} percent={skills[value]}/>
+              return <Skill key={index} text={value} percent={skills[value]} animation={isAnimating}/>
           })}
           </div>
       </div>

@@ -7,9 +7,9 @@ const hm = "https://1000logos.net/wp-content/uploads/2017/02/Hennes-Logo-19682.j
 const adidas = 'https://cdn.icon-icons.com/icons2/2699/PNG/512/adidas_logo_icon_169639.png'
 const nivea = "https://i.pinimg.com/originals/a1/d3/fb/a1d3fb7bae3978bb39c6bf6e41943741.jpg"
 
-const ExperiencesCard = ({style}) => {
+const ExperiencesCard = ({flex}) => {
   let styles = {
-    display: style === 'vertical' ? null : 'flex'
+    display: flex === 'vertical' ? null : 'flex'
   }
   return (
     <BasicCard >
@@ -20,17 +20,17 @@ const ExperiencesCard = ({style}) => {
                       timeline={'Feb 2017 - Current'} 
                       title={'Front-end developer'} 
                       summary={'Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.'}
-                      style={style}/>
+                      flex={flex}/>
           <Experiences logo = {hm}
                       timeline={'Aug 2016 - Feb 2018'} 
                       title={'Full-stack developer'} 
                       summary={'Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.'}
-                      style={style}/>
+                      flex={flex}/>
           <Experiences logo = {nivea}
                       timeline={'Jun 2015 - Aug 2016'} 
                       title={'Junior front-end developer'} 
                       summary={'Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.'}
-                      style={style}/>
+                      flex={flex}/>
         </div>
       </div>
     </BasicCard>

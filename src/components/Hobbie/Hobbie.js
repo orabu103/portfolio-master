@@ -7,7 +7,7 @@ const Hobbie = ({url , title , subtitle}) => {
   return (
     <div className='Hobbie'>
         <Pic url={url}
-             width="295px"   
+             width="100%"   
              height="139px"/>
         <h3>{title}</h3>
         <p>{subtitle}</p>
