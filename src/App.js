@@ -15,10 +15,10 @@ function App() {
         <ProjectCard />
       </BasicCard>
       <BasicCard>
-        <SkillsCard />
+        <SkillsCard  />
       </BasicCard>
       <BasicCard>
-        <BlogCard />
+        <BlogCard style={''}/>
       </BasicCard>
     </div>
   );

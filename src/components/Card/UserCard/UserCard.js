@@ -4,16 +4,20 @@ import UserContact from './UserContact/UserContact';
 import './style.css'
 const url = "https://media.npr.org/assets/img/2022/11/08/ap22312071681283-0d9c328f69a7c7f15320e8750d6ea447532dff66.jpg";
  
-const UserCard = () => {
+const UserCard = ({style}) => {
+    let styles = {
+        display: style === 'vertical' ? null : 'flex'
+    }
+
   return (
-    <div className='UserCard'>
+    <div className='UserCard' style={styles}>
         {/* Picture */}
         <div className="UserCard_pic" >
             <Pic url = {url}/>
         </div>
         {/* Header */}
         <div className='UserCard_container'>
-            <div className='UserCard_container_header'>
+            <div className='UserCard_container_header' style={styles}>
                 <div className='UserCard_container_UserCard_container_header_info'>
                     <h1>Or Abuhtzira</h1>
                     <h4>Full stack developer</h4>

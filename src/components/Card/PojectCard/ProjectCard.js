@@ -6,9 +6,14 @@ import './style.css'
 const url = "https://www.geckoboard.com/uploads/sales-dashboard-example.png"
 let skills = ['JavaScript' , 'Nodejs' , 'React' , 'C++' , 'C#' , 'Java' , ' Python']
 
-const ProjectCard = () => {
+const ProjectCard = ({style}) => {
+
+    let styles = {
+        display: style === 'vertical' ? null : 'flex'
+    }
+
   return (
-    <div className='ProjectCard'>
+    <div className='ProjectCard' style={styles}>
         {/* Picture */}
         <div className="ProjectCard_pic" >
             <Pic url = {url}/>
