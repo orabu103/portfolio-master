@@ -1,0 +1,10 @@
+
+.Hobbie > * {
+    margin-bottom: 10px;
+}
+.Hobbie > h3{
+    font-size: 18px;
+}
+.Hobbie > p {
+    font-size: 16px;
+}

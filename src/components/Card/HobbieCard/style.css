@@ -1,0 +1,15 @@
+.HobbieCard{
+    width: 100%;
+    margin: 20px;
+}
+.HobbieCard > h1 {
+    font-weight: 500;
+
+}
+
+
+.HobbieCard_body {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 import Pic from '../../Pic/Pic'
-import UserContact from './UserContact/UserContact';
+import UserContact from '../../UserContact/UserContact';
 import './style.css'
 const url = "https://media.npr.org/assets/img/2022/11/08/ap22312071681283-0d9c328f69a7c7f15320e8750d6ea447532dff66.jpg";
  

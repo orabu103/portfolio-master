@@ -1,10 +1,10 @@
 import React from 'react'
 
 
-const Pic = ({url}) => {
+const Pic = ({url , width , height}) => {
     const background = { 
-        width:"351px",
-        height: "343px",
+        width: width ? width :"351px",
+        height: height ? height : "343px",
         maxWidth: "351px",
         maxHeight: "343px",
         borderRadius: "12px",

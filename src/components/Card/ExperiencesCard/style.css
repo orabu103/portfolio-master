@@ -1,0 +1,14 @@
+.ExperiencesCard{
+    width: 100%;
+    margin: 20px;
+}
+
+.ExperiencesCard > h1{
+    font-weight: 500;
+}
+.ExperiencesCard_body{
+    /* display: flex; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}

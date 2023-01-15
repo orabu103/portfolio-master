@@ -1,0 +1,24 @@
+.Experiences{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.Experiences img {
+    width:100px; 
+    height:65px;
+    margin-right: 10px;
+}
+
+.Experiences_body > * {
+    max-width: 230px;
+    margin-bottom: 10px;
+}
+.Experiences_body > p {
+    margin-top: 30px;
+}
+.Experiences_body > h4 {
+    font-size: 14px;
+}
+.Experiences_body > h3 {
+    font-size: 16px;
+}

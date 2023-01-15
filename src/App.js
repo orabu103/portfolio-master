@@ -4,6 +4,8 @@ import UserCard from './components/Card/UserCard/UserCard';
 import ProjectCard from './components/Card/PojectCard/ProjectCard';
 import SkillsCard from './components/Card/SkillsCard/SkillsCard';
 import BlogCard from './components/Card/BlogCard/BlogCard';
+import ExperiencesCard from './components/Card/ExperiencesCard/ExperiencesCard';
+import HobbieCard from './components/Card/HobbieCard/HobbieCard';
 
 function App() {
   return (
@@ -18,8 +20,10 @@ function App() {
         <SkillsCard  />
       </BasicCard>
       <BasicCard>
-        <BlogCard style={''}/>
+        <BlogCard />
       </BasicCard>
+      < ExperiencesCard />
+      <HobbieCard style={''}/>
     </div>
   );
 }
