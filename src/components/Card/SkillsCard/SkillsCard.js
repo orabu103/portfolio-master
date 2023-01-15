@@ -1,5 +1,6 @@
 import React from 'react'
 import Skill from '../../Skill/Skill'
+import BasicCard from '../BasicCard'
 
 import './style.css'
 
@@ -16,16 +17,18 @@ const SkillsCard = ({style}) => {
     gridTemplateColumns: style === 'vertical' ? '1fr' : 'repeat(2, 1fr)'
 }
   return (
-    <div className='SkillsCard'>
-        {/* Header */}
-        <h1 className='SkillsCard_header'>FRONT END</h1>
-        {/* Body */}
-        <div className='SkillsCard_body'  style={styles}>
-        {Object.keys(skills).map((value , index) => {
-            return <Skill key={index} text={value} percent={skills[value]}/>
-        })}
-        </div>
-    </div>
+    <BasicCard>
+      <div className='SkillsCard'>
+          {/* Header */}
+          <h1 className='SkillsCard_header'>FRONT END</h1>
+          {/* Body */}
+          <div className='SkillsCard_body'  style={styles}>
+          {Object.keys(skills).map((value , index) => {
+              return <Skill key={index} text={value} percent={skills[value]}/>
+          })}
+          </div>
+      </div>
+    </BasicCard>
   )
 }
 

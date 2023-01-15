@@ -6,24 +6,18 @@ import SkillsCard from './components/Card/SkillsCard/SkillsCard';
 import BlogCard from './components/Card/BlogCard/BlogCard';
 import ExperiencesCard from './components/Card/ExperiencesCard/ExperiencesCard';
 import HobbieCard from './components/Card/HobbieCard/HobbieCard';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <div className="App">
-      <BasicCard> 
-        <UserCard />
-      </BasicCard>
-      <BasicCard> 
-        <ProjectCard />
-      </BasicCard>
-      <BasicCard>
-        <SkillsCard  />
-      </BasicCard>
-      <BasicCard>
-        <BlogCard />
-      </BasicCard>
-      < ExperiencesCard />
-      <HobbieCard style={''}/>
+      {/* <Header title={'Projects'} number={3}/> */}
+      <UserCard className="grid-item item1" />
+      <ProjectCard className="grid-item item2" />
+      <SkillsCard className="grid-item item3" />
+      <BlogCard className="grid-item item4"/>
+      <ExperiencesCard className="grid-item item5"/>
+      <HobbieCard className="grid-item item6"/>
     </div>
   );
 }

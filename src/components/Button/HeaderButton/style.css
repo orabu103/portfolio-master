@@ -1,0 +1,24 @@
+.HeaderButton{
+    height: 33px;
+    border: 1px solid #4F4F4F;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: transparent;
+    text-align: center;
+    transition-duration: 0.2s;
+    
+}
+
+.HeaderButton:hover{
+    border-color: #2F80ED;
+}
+
+.HeaderButton:active,
+.HeaderButton:focus{
+    background-color: #2F80ED;
+    border-color:#2F80ED;
+}
+.HeaderButton.button {
+    padding: 10px;
+}
+

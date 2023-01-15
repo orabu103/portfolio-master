@@ -1,0 +1,15 @@
+.Header{
+    margin: 20px;
+}
+.Header_title > h1{
+    font-weight: 500;
+}
+
+.Header_body{
+    margin-top: 30px;
+}
+
+.Header_body > button {
+    margin-right: 15px;
+}
+
