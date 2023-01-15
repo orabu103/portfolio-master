@@ -8,10 +8,48 @@
     padding: 10px;  
     margin-bottom: 20px;
     overflow: hidden;
-
 }
 
-@media only screen and (max-width: 768px) {
+
+  .slideInLeft{
+    animation: slideInLeft 2s linear ;
+    animation-fill-mode: forwards;
+  }
+
+  .slideInRight{
+    animation: slideInRight 2s linear ;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes slideInLeft {
+    from {
+      visibility: visible;
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      visibility: visible;
+      transform: translateX(0);
+      opacity: 1;
+
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+
+    }
+  }
+
+
+  @media only screen and (max-width: 768px) {
     /* CSS styles for screens with width less than 768px */
     .BasicCard{
         width: 100%;

@@ -7,6 +7,7 @@
 }
 .Skill > p {
  margin-right: 10px;
+ width: 100px;
 }
 
 .Skill_line_percent,

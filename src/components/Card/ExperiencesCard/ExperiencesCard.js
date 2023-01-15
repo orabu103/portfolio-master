@@ -7,12 +7,12 @@ const hm = "https://1000logos.net/wp-content/uploads/2017/02/Hennes-Logo-19682.j
 const adidas = 'https://cdn.icon-icons.com/icons2/2699/PNG/512/adidas_logo_icon_169639.png'
 const nivea = "https://i.pinimg.com/originals/a1/d3/fb/a1d3fb7bae3978bb39c6bf6e41943741.jpg"
 
-const ExperiencesCard = ({flex}) => {
+const ExperiencesCard = ({flex , animation}) => {
   let styles = {
     display: flex === 'vertical' ? null : 'flex'
   }
   return (
-    <BasicCard >
+    <BasicCard animation={animation} >
       <div className='ExperiencesCard'>
         <h1>Experiences</h1>
           <div className='ExperiencesCard_body' style={styles}>

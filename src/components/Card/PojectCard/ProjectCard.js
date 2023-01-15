@@ -8,7 +8,7 @@ import './style.css'
 const url = "https://www.geckoboard.com/uploads/sales-dashboard-example.png"
 let skills = ['JavaScript' , 'Nodejs' , 'React' , 'C++' , 'C#' , 'Java' , ' Python']
 
-const ProjectCard = ({flex}) => {
+const ProjectCard = ({flex , animation}) => {
 
     let styles = {
         flexDirection: flex === 'vertical' ? 'column' : 'row',
@@ -16,7 +16,7 @@ const ProjectCard = ({flex}) => {
     }
 
   return (
-    <BasicCard>
+    <BasicCard animation={animation}>
         <div className='ProjectCard' style={styles}>
             {/* Picture */}
             <div className="ProjectCard_pic" >

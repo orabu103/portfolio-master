@@ -4,7 +4,7 @@ import BasicCard from '../BasicCard'
 
 import './style.css'
 const url = "https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y29tcHV0ZXIlMjBjb2ZmZWV8ZW58MHx8MHx8&w=1000&q=80"
-const BlogCard = ({flex}) => { 
+const BlogCard = ({flex , animation}) => { 
   const body = () => {
     return(
       <div className='BlogCard_body'>
@@ -21,7 +21,7 @@ const BlogCard = ({flex}) => {
   }
 
   return (
-    <BasicCard>
+    <BasicCard animation={animation}>
       <div className='BlogCard'>
           <div className='BlogCard_header'>
           {/* Header */}

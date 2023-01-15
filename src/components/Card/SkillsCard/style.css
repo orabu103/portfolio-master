@@ -1,5 +1,6 @@
 .SkillsCard{
   width: 100%;
+  padding: 10px;
 }
 .SkillsCard_body{
     display: grid;

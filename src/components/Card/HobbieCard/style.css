@@ -1,9 +1,10 @@
 .HobbieCard{
     width: 100%;
-    margin: 20px;
+    padding: 10px;
 }
 .HobbieCard > h1 {
     font-weight: 500;
+    
 
 }
 .HobbieCard_body {
