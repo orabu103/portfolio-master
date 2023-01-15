@@ -1,0 +1,15 @@
+
+.BlogCard{
+    width: 100%;
+}
+.BlogCard  * {
+    margin-bottom: 10px;
+}
+.BlogCard > a {
+    text-decoration: none;
+}
+.BlogCard_header{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}

@@ -1,9 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 import BasicCard from './components/Card/BasicCard';
 import UserCard from './components/Card/UserCard/UserCard';
 import ProjectCard from './components/Card/PojectCard/ProjectCard';
 import SkillsCard from './components/Card/SkillsCard/SkillsCard';
+import BlogCard from './components/Card/BlogCard/BlogCard';
 
 function App() {
   return (
@@ -16,6 +16,9 @@ function App() {
       </BasicCard>
       <BasicCard>
         <SkillsCard />
+      </BasicCard>
+      <BasicCard>
+        <BlogCard />
       </BasicCard>
     </div>
   );

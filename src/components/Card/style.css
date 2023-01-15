@@ -7,12 +7,14 @@
     width: 100%;
     padding: 10px;  
     margin-bottom: 20px;
+    overflow: hidden;
+
 }
 
 @media only screen and (max-width: 768px) {
     /* CSS styles for screens with width less than 768px */
     .BasicCard{
         width: 100%;
-        justify-content: center;
+        /* justify-content: center; */
     }
   }

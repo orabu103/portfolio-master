@@ -58,3 +58,10 @@ button{
   font-size: 18px;
   line-height: 22px;
 }
+
+h5{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #E0E0E0;
+}
