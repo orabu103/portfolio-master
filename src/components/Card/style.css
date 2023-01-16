@@ -20,7 +20,10 @@
     animation: slideInRight 2s linear ;
     animation-fill-mode: forwards;
   }
-
+.slideInDown{
+  animation: slideInDown 2s linear ;
+    animation-fill-mode: forwards;
+}
   @keyframes slideInLeft {
     from {
       visibility: visible;
@@ -38,6 +41,19 @@
   @keyframes slideInRight {
     from {
       transform: translateX(100%);
+      opacity: 0;
+
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+
+    }
+  }
+
+  @keyframes slideInDown {
+    from {
+      transform: translateY(100%);
       opacity: 0;
 
     }

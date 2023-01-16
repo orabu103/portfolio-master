@@ -1,5 +1,6 @@
 .HeaderButton{
-    height: 33px;
+    height: 46px;
+    min-width: 120px;
     border: 1px solid #4F4F4F;
     border-radius: 12px;
     cursor: pointer;
@@ -17,6 +18,7 @@
 .HeaderButton:focus{
     background-color: #2F80ED;
     border-color:#2F80ED;
+    color:white
 }
 .HeaderButton.button {
     padding: 10px;

@@ -23,17 +23,22 @@ const skillsFront = {
 
 function App() {
   return (
-    <div className="App grid-container">
-      <div className="grid-item UserCard"> <UserCard/> </div>
-      <div className="grid-item SkillsCard"> <SkillsCard title ={'FRONT END'} skills={skillsFront} flex='vertical'/> </div>
-      <div className="grid-item SkillsCard"> <SkillsCard title ={'BACK END'} skills={skillsBack} flex='vertical'/> </div>
-      <div className="grid-item ExperiencesCard"> <ExperiencesCard flex='vertical'/> </div>
-      <div className="grid-item BlogCard"> <BlogCard flex='vertical'/> </div>
-      <div className="grid-item HobbieCard"> <HobbieCard flex='vertical'/> </div>
-      <div className="grid-item Header"> <Header title={'Project'} number={3} flex='vertical' /> </div>
-      <div className="grid-item ProjectCard"> <ProjectCard flex='vertical' animation="slideInRight"/> </div>
-      <div className="grid-item ProjectCard"> <ProjectCard flex='vertical' animation="slideInLeft"/> </div>
-      <div className="grid-item ProjectCard"> <ProjectCard flex='vertical' animation="slideInRight"/> </div>
+    <div className='App'>
+      {/* <div className='header'>My name is or</div>
+
+     */}
+      <div className="grid-container">
+        <div className="grid-item UserCard"> <UserCard/> </div>
+        <div className="grid-item SkillsCard"> <SkillsCard title ={'FRONT END'} skills={skillsFront} flex='vertical'/> </div>
+        <div className="grid-item SkillsCard"> <SkillsCard title ={'BACK END'} skills={skillsBack} flex='vertical'/> </div>
+        <div className="grid-item ExperiencesCard"> <ExperiencesCard flex='vertical'/> </div>
+        <div className="grid-item BlogCard"> <BlogCard flex='vertical'/> </div>
+        <div className="grid-item HobbieCard"> <HobbieCard flex='vertical'/> </div>
+        <div className="grid-item Header"> <Header title={'Project'} number={3} flex='vertical' /> </div>
+        <div className="grid-item ProjectCard"> <ProjectCard flex='vertical' animation="slideInLeft"/> </div>
+        <div className="grid-item ProjectCard"> <ProjectCard flex='vertical' /> </div>
+        <div className="grid-item ProjectCard"> <ProjectCard flex='vertical' animation="slideInRight"/> </div>
+      </div>
     </div>
   );
 }
