@@ -16,7 +16,7 @@ const ProjectCard = ({flex , animation}) => {
     }
 
   return (
-    <BasicCard animation={animation}>
+    <BasicCard className='BasicCard_projectcard' animation={animation}>
         <div className='ProjectCard' style={styles}>
             {/* Picture */}
             <div className="ProjectCard_pic" >

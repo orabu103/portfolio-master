@@ -12,7 +12,7 @@ const ExperiencesCard = ({flex , animation}) => {
     display: flex === 'vertical' ? null : 'flex'
   }
   return (
-    <BasicCard animation={animation} >
+    <BasicCard className='ExperiencesCard' animation={animation} >
       <div className='ExperiencesCard'>
         <h1>Experiences</h1>
           <div className='ExperiencesCard_body' style={styles}>

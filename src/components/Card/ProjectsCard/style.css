@@ -1,0 +1,9 @@
+.ProjectsCard{
+    width: 100%;
+}
+.ProjectsCard_projects{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  
+}

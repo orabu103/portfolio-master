@@ -21,7 +21,7 @@ const BlogCard = ({flex , animation}) => {
   }
 
   return (
-    <BasicCard animation={animation}>
+    <BasicCard className='BlogCard' animation={animation}>
       <div className='BlogCard'>
           <div className='BlogCard_header'>
           {/* Header */}

@@ -24,16 +24,14 @@ const Experiences = ({logo , timeline , title , summary , flex}) => {
     observer.observe(elementRef.current);
 }, []);
 
-  let styles = {
-    maxWidth: flex === 'vertical' ? '280px' : '170px'
-  }
+
   return (
     <div ref={elementRef} className='Experiences' style={style}>
         <img src={logo} alt='' className={isAnimating ?'slideInLeft' : null}/>
         <div className={isAnimating ? 'Experiences_body slideInRight' : 'Experiences_body'}>
           <h4> {timeline} </h4>
           <h3> {title} </h3>
-          <p style={styles}> {summary} </p>
+          <p> {summary} </p>
         </div>
     </div>
   )

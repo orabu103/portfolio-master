@@ -1,7 +1,7 @@
 import React , {useRef , useState , useEffect}from 'react'
 import './style.css'
 
-const BasicCard = ({children , animation}) => {
+const BasicCard = ({children , animation , className}) => {
   const elementRef = useRef(null);
   const [isAnimating, setIsAnimating] =  useState(false);
 
@@ -24,7 +24,7 @@ const BasicCard = ({children , animation}) => {
     observer.observe(elementRef.current);
 }, []);
   return (
-    <div ref={elementRef} className={isAnimating ? `BasicCard ${animation}` : 'BasicCard'} style={style}>
+    <div ref={elementRef} className={isAnimating ? `BasicCard ${className} ${animation}` : `BasicCard ${className}`} style={style}>
         {children} 
     </div>
   )

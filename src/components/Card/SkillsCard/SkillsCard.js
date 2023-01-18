@@ -26,8 +26,8 @@ const SkillsCard = ({title , skills ,  flex , animation}) => {
     gridTemplateColumns: flex === 'vertical' ? '1fr' : 'repeat(2, 1fr)'
 }
   return (
-    <BasicCard animation={animation}>
-      <div  className='SkillsCard'>
+    <BasicCard className='SkillsCard' animation={animation}>
+      <div className='SkillsCard'>
           {/* Header */}
           <h1 className='SkillsCard_header'>{title}</h1>
           {/* Body */}

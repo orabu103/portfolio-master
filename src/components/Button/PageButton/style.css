@@ -1,0 +1,23 @@
+.PageButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+    color: #4F4F4F;
+    cursor: pointer;
+    text-align: center;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.PageButton:hover{
+    border-color: #2F80ED;
+}
+
+.PageButton:focus,
+.PageButton:active{
+    background-color: #2F80ED;
+    color: white;
+}
