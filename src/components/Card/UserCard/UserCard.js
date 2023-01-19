@@ -4,7 +4,7 @@ import UserContact from '../../UserContact/UserContact';
 import BasicCard from '../BasicCard';
 
 import './style.css'
-const url = "https://media.npr.org/assets/img/2022/11/08/ap22312071681283-0d9c328f69a7c7f15320e8750d6ea447532dff66.jpg";
+const url = "/avatar.png";
  
 const UserCard = ({flex , animation}) => {
     let styles = {
@@ -16,8 +16,7 @@ const UserCard = ({flex , animation}) => {
         <div className='UserCard' style={styles}>
             {/* Picture */}
             <div className="UserCard_pic" >
-                <Pic url = {url}
-                    width={'370px'}/>
+                <Pic url = {url}/>
             </div>
             {/* Header */}
             <div className='UserCard_container'>
