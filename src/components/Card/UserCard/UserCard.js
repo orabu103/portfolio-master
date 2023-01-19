@@ -12,12 +12,12 @@ const UserCard = ({flex , animation}) => {
     }
 
   return (
-    <BasicCard animation={animation}>
+    <BasicCard className={'UserCard'} animation={animation}>
         <div className='UserCard' style={styles}>
             {/* Picture */}
             <div className="UserCard_pic" >
                 <Pic url = {url}
-                    width={'100%'}/>
+                    width={'370px'}/>
             </div>
             {/* Header */}
             <div className='UserCard_container'>

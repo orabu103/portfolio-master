@@ -9,7 +9,7 @@ const buttons = ['React' , 'Vue' , 'NodeJs']
 
 const Header = ({title , number}) => {
   return (
-    <BasicCard>
+    <BasicCard className='Header'>
         <div className='Header'>
             <div className='Header_title'>
                 <h1>{title} ({number})</h1>

@@ -13,7 +13,7 @@ const HobbieCard = ({flex , animation}) => {
 }
 
   return (
-    <BasicCard animation={animation}>
+    <BasicCard  className='HobbieCard' animation={animation}>
         <div className='HobbieCard'>
             <h1>Hobbies</h1>
             <div className='HobbieCard_body' style={styles}>
