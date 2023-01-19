@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://orabu103.github.io/portfolio-master/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/orabu103/portfolio-master">
       Solution
     </a>
     <span> | </span>
@@ -38,8 +38,6 @@
 ## Overview
 
 ![screenshot](https://github.com/orabu103/portfolio-master/blob/main/public/gif.gif)
-
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
 
 ### Built With
@@ -80,4 +78,4 @@ $ npm start
 
 ## Contact
 
-- GitHub [@orabu103](https://{github.com/orabu103})
+- GitHub [@orabu103](https://github.com/orabu103)
