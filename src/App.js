@@ -23,7 +23,8 @@ function App() {
     <div className='App'>
       {/* <Header /> */}
       <Dashboard />
-     <footer><h3>created by Or Abuhtzira - devChallenges.io</h3></footer>
+      <h3>created by Or Abuhtzira - devChallenges.io</h3>
+    
     </div>
   );
 }
