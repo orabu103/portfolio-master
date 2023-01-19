@@ -4,7 +4,7 @@ import UserContact from '../../UserContact/UserContact';
 import BasicCard from '../BasicCard';
 
 import './style.css'
-const url = "/avatar.png";
+const url = "https://orabu103.github.io/portfolio-master/avatar.png";
  
 const UserCard = ({flex , animation}) => {
     let styles = {
