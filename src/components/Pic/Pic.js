@@ -11,7 +11,7 @@ const Pic = ({url , width , height}) => {
         background :`url(${url})` ,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
-        backgroundPosition: "center"
+        // backgroundPosition: "center"
     }
 
   return (
