@@ -23,7 +23,8 @@ function App() {
     <div className='App'>
       {/* <Header /> */}
       <Dashboard />
-     
+      <h3>created by Or Abuhtzira - devChallenges.io</h3>
+    
     </div>
   );
 }

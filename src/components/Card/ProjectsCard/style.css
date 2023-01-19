@@ -1,5 +1,6 @@
 .ProjectsCard{
     width: 100%;
+    margin-bottom: 50px;
 }
 .ProjectsCard_projects{
     display: flex;
